@@ -77,7 +77,9 @@ shift $(expr $OPTIND - 1) # remove options from positional parameters
 if [ -z "${action}" ]; then print_usage >&2; exit 1 ; fi
 
 if [ x"${action}" == x"encrypt" ]; then
+    if [ "$#" -ne 3 ]; then print_usage >&2; exit 1 ; fi
     encrypt_ansible_vault_string "$@"
 else
+    if [ "$#" -ne 2 ]; then print_usage >&2; exit 1 ; fi
     decrypt_ansible_vault_string "$@"
 fi
