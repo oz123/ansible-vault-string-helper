@@ -93,3 +93,12 @@ and did create such an issue, let me know. I will link it here).
 Alternatively, if someone is willing to sponsor such a work, you can contact me directly.
 
 If this was added in some form to ansible, please let me know!
+
+### Similar tools
+
+[SOPS][1] A tool from the guys in mozilla to encrypt values in yaml, json and more formats. 
+Good amount of work done GO. Makes me wonder if I hit the same nerve as Mozilla Guys did.
+Obviously, they have more resources to waste on solving a similar problem with a bigger hammer.
+
+
+[1]: https://github.com/mozilla/sops
